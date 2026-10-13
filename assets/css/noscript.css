@@ -1,0 +1,196 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Ahad's Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Sidebar -->
+			<section id="sidebar">
+				<div class="inner">
+					<nav>
+						<ul>
+							<li><a href="#intro">At a Glance</a></li>
+							<li><a href="#one">Career</a></li>
+							<li><a href="#two">Projects</a></li>
+							<li><a href="#three">Get in touch</a></li>
+						</ul>
+					</nav>
+				</div>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Intro -->
+					<section id="intro" class="wrapper style1 fullscreen fade-up">
+						<div class="inner">
+							<h2>Hi, I am</h2>
+							<h1>Abdul Ahad Al Aman</h1>
+							<p>A teacher and a lifelong learner. With having a diverse background in customer service, software development, and education, I aim to synthesize my skill sets for the betterment of society.</p>
+							<ul class="actions">
+								<li><a href="#one" class="button scrolly">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style2 spotlights">
+						<section>
+							<a href="#" class="image"><img src="images/pic01.jpg" alt="" data-position="center center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>First4Freelancers Ltd</h2>
+									<p><strong>Assistant Team Lead – Compliance</strong> (June 2026 – Present). Co-managing a team of compliance officers to ensure 100% adherence to NHS and CQC regulatory standards, monitoring KPIs, and maintaining internal training AI chatbot resources. Previously Compliance Executive (Dec 2024 – May 2026), verifying UK employment credentials and deploying FAQ bots via Chatbase.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic02.jpg" alt="" data-position="top center" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>foodpanda Bangladesh</h2>
+									<p>Dec 2022 – Oct 2024. As Risk &amp; Fraud Management Specialist and Escalation Specialist, investigated fraudulent accounts, managed critical escalations, and analyzed CSAT/NPS trends. Started as a Social Media Agent, earning "Panda of the Quarter" twice in 2023.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+						<section>
+							<a href="#" class="image"><img src="images/pic03.jpg" alt="" data-position="25% 25%" /></a>
+							<div class="content">
+								<div class="inner">
+									<h2>Education &amp; Teaching</h2>
+									<p>B.A. in English from East West University (conferred April 2025, CGPA 3.50, Medha Lalon Scholarship recipient). Private Tutor from Jan 2023 to Nov 2025, mentoring students in advanced English writing and technical skills using vibe-coding tools like Deepsite.</p>
+									<ul class="actions">
+										<li><a href="generic.html" class="button">Learn more</a></li>
+									</ul>
+								</div>
+							</div>
+						</section>
+					</section>
+
+				<!-- Two -->
+					<section id="two" class="wrapper style3 fade-up">
+						<div class="inner">
+							<h2>Projects &amp; Skills</h2>
+							<p>Instructional design concepts, automation workflows, and technical proficiencies.</p>
+							<div class="features">
+								<section>
+									<span class="icon solid major fa-code"></span>
+									<h3>AI Literacy Course</h3>
+									<p>Designed a blended "Introduction to AI Literacy" course in Canvas LMS with multimedia assets, assessments, and sequential learning paths.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-lock"></span>
+									<h3>Compliance FAQ Bot</h3>
+									<p>Independently built and trained a Chatbase AI assistant to streamline onboarding and answer FAQs for new joiners at First4Freelancers.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-cog"></span>
+									<h3>AI &amp; Automation</h3>
+									<p>Exploring prompt engineering, n8n, Google AI Studio, and NotebookLM to optimize AI-driven learning workflows.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-desktop"></span>
+									<h3>Mobile Apps</h3>
+									<p>Built interactive apps and navigation components with Flutter; repositories are open on GitHub.</p>
+								</section>
+								<section>
+									<span class="icon solid major fa-link"></span>
+									<h3>Certifications</h3>
+									<p>Human Rights Orientation (NHRC/UNDP, 2025), DataCamp SQL (June 2026), and LinkedIn Learning Excel &amp; Google Sheets.</p>
+								</section>
+								<section>
+									<span class="icon major fa-gem"></span>
+									<h3>Core Tools</h3>
+									<p>Canvas LMS, VSCode, MS Office, Google Suite (Docs, Sheets, Slides), GitHub, and SQL queries.</p>
+								</section>
+							</div>
+							<ul class="actions">
+								<li><a href="generic.html" class="button">Learn more</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style1 fade-up">
+						<div class="inner">
+							<h2>Get in touch</h2>
+							<p>Reach out for collaborations on educational technology, compliance operations, or instructional design.</p>
+							<div class="split style1">
+								<section>
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="name">Name</label>
+												<input type="text" name="name" id="name" />
+											</div>
+											<div class="field half">
+												<label for="email">Email</label>
+												<input type="text" name="email" id="email" />
+											</div>
+											<div class="field">
+												<label for="message">Message</label>
+												<textarea name="message" id="message" rows="5"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><a href="" class="button submit">Send Message</a></li>
+										</ul>
+									</form>
+								</section>
+								<section>
+									<ul class="contact">
+										<li>
+											<h3>Location</h3>
+											<span>Dhaka, Bangladesh</span>
+										</li>
+										<li>
+											<h3>Email</h3>
+											<a href="mailto:your.email@domain.com">your.email@domain.com</a>
+										</li>
+										<li>
+											<h3>Social</h3>
+											<ul class="icons">
+												<li><a href="https://github.com/YOUR-USERNAME" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+												<li><a href="https://linkedin.com/in/YOUR-USERNAME" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+											</ul>
+										</li>
+									</ul>
+								</section>
+							</div>
+						</div>
+					</section>
+
+			</div>
+
+		<!-- Footer -->
+			<footer id="footer" class="wrapper style1-alt">
+				<div class="inner">
+					<ul class="menu">
+						<li>&copy; Abdul Ahad Al Aman. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+					</ul>
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
