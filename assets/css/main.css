@@ -4105,13 +4105,15 @@ body.is-preload #sidebar nav ul li {
 }
 #main .image.fit {
   display: block;
-  max-width: 300px; /* change this number to resize */
-  margin: 0 auto 2em; /* centers the banner; use 0 0 2em to keep it left-aligned */
+  max-width: 225px;
+  margin: 0 auto 2em;
 }
-
 #main .image.fit img {
   width: 100%;
-  height: auto; /* keeps the proportions, so nothing is cropped */
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 4px;
 }
 .role .date {
   display: inline-block;
@@ -4122,4 +4124,24 @@ body.is-preload #sidebar nav ul li {
   font-size: 0.65em;
   letter-spacing: 0.15em;
   text-transform: uppercase;
+}
+.role {
+  margin-bottom: 1.8em;
+}
+.role h3 {
+  margin: 0 0 0.4em;
+  font-size: 0.95em;
+}
+.role ul {
+  margin: 0;
+  padding-left: 1.2em;
+}
+.role li {
+  margin-bottom: 0.5em;
+  font-size: 0.85em;
+}
 
+#main section[id] {
+  scroll-margin-top: 5em;
+  margin-bottom: 3em;
+}

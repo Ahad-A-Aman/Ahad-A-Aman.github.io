@@ -237,6 +237,67 @@
               </ul>
             </div>
           </section>
+
+          <!-- Education (now INSIDE the inner container) -->
+          <section id="education">
+            <span class="image fit">
+              <img
+                src="images/pic03.jpg"
+                alt="East West University"
+              />
+            </span>
+            <h2>Education</h2>
+
+            <div class="role">
+              <h3>B.A. in English, East West University</h3>
+              <span class="date">Jul 2024</span>
+              <ul>
+                <li>
+                  CGPA
+                  <strong>3.50</strong>
+                  (on a scale of 4.00).
+                </li>
+                <li>
+                  <strong>Relevant coursework:</strong>
+                  Computer Assisted Language Learning, Methodology of Language
+                  Teaching, Academic Writing, Syllabus and Material Design, and
+                  Techniques of Teaching Language.
+                </li>
+              </ul>
+            </div>
+
+            <div class="role">
+              <h3>Academic Honors and Awards</h3>
+              <span class="date">2021</span>
+              <ul>
+                <li>
+                  <strong>Medha Lalon Scholarship:</strong>
+                  awarded a merit-based scholarship at East West University for
+                  maintaining a CGPA of 3.50 over the first three consecutive
+                  semesters.
+                </li>
+              </ul>
+            </div>
+
+            <div class="role">
+              <h3>Paper and Presentation Experience (Through Courses)</h3>
+              <ul>
+                <li>Child Language Acquisition</li>
+                <li>
+                  The Natural Order Hypothesis: A Critical Analysis and
+                  Pedagogical Implications
+                </li>
+                <li>
+                  Integrating Multimodal Literacy into ESL/EFL Teaching for
+                  Bangladeshi Undergraduate Students
+                </li>
+                <li>
+                  Artificial Intelligence (AI): A Review of its Uses in Language
+                  Teaching and Learning (presentation on an author's paper)
+                </li>
+              </ul>
+            </div>
+          </section>
         </div>
       </section>
     </div>
@@ -249,6 +310,10 @@
       <div class="inner">
         <ul class="menu">
           <li>&copy; Abdul Ahad Al Aman. All rights reserved.</li>
+          <li>
+            Design:
+            <a href="http://html5up.net">HTML5 UP</a>
+          </li>
         </ul>
       </div>
     </footer>
@@ -280,15 +345,16 @@
           io.observe(s);
         });
 
+        // clicking "My Journey" scrolls to TFB and replays its fade-in
         var title = document.querySelector("#header .title");
         var tfb = document.getElementById("tfb");
         title.addEventListener("click", function (e) {
           e.preventDefault();
-          tfb.classList.remove("visible"); // hide it
+          tfb.classList.remove("visible");
           tfb.scrollIntoView({ behavior: "smooth", block: "start" });
           setTimeout(function () {
             tfb.classList.add("visible");
-          }, 500); // fade it in
+          }, 500);
         });
       });
     </script>
