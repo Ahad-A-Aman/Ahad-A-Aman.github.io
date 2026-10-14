@@ -56,7 +56,181 @@
       >
         <div class="inner">
           <h1 class="major">Project Details</h1>
+          <section id="shiftradius">
+            <h2>ShiftRadius</h2>
+            <p>
+              Intelligent healthcare staffing and compliance automation engine.
+            </p>
 
+            <!-- Screenshot slideshow -->
+            <div
+              class="slideshow"
+              aria-label="ShiftRadius screenshots"
+            >
+              <div class="slides">
+                <figure class="slide">
+                  <img
+                    src="images/shiftradius/1-dashboard.png"
+                    alt="ShiftRadius dashboard"
+                  />
+                  <figcaption>
+                    Dashboard: daily availability against incoming shift demand
+                  </figcaption>
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="images/shiftradius/2-matching.png"
+                    alt="Mutual match results"
+                  />
+                  <figcaption>
+                    Mutual match with true road-network drive times
+                  </figcaption>
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="images/shiftradius/3-outreach.png"
+                    alt="1-click outreach"
+                  />
+                  <figcaption>1-click WhatsApp and SMS outreach</figcaption>
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="images/shiftradius/4-map.png"
+                    alt="Geospatial demand map"
+                  />
+                  <figcaption>
+                    Candidate density against underserved care homes
+                  </figcaption>
+                </figure>
+                <figure class="slide">
+                  <img
+                    src="images/shiftradius/5-proforma.png"
+                    alt="Compliance proforma generation"
+                  />
+                  <figcaption>
+                    Compliance proforma generated across 19+ care providers
+                  </figcaption>
+                </figure>
+              </div>
+              <div
+                class="slide-btn prev"
+                role="button"
+                tabindex="0"
+                aria-label="Previous screenshot"
+              >
+                &#10094;
+              </div>
+              <div
+                class="slide-btn next"
+                role="button"
+                tabindex="0"
+                aria-label="Next screenshot"
+              >
+                &#10095;
+              </div>
+              <div class="dots"></div>
+            </div>
+
+            <ul class="chips">
+              <li>Lovable</li>
+              <li>Tailwind CSS</li>
+              <li>OSRM</li>
+              <li>Leaflet</li>
+              <li>Word (.docx) XML</li>
+            </ul>
+
+            <h3>Overview</h3>
+            <p>
+              An end-to-end recruitment operations platform designed for
+              high-volume UK healthcare agencies. ShiftRadius bridges dynamic
+              daily candidate availability sheets with real-time incoming shift
+              demand, enforces true road-network commute limits, and automates
+              multi-provider compliance paperwork.
+            </p>
+
+            <!-- Impact -->
+            <div class="stats">
+              <div class="stat">
+                <strong>90%</strong>
+                <span>less compliance admin</span>
+              </div>
+              <div class="stat">
+                <strong>&lt; 30 sec</strong>
+                <span>shift dispatch, down from 15+ minutes</span>
+              </div>
+              <div class="stat">
+                <strong>Fewer</strong>
+                <span>travel-related cancellations</span>
+              </div>
+            </div>
+
+            <div class="role">
+              <h3>Key highlights &amp; features</h3>
+              <ul>
+                <li>
+                  <strong>Smart hybrid commute engine:</strong>
+                  replaced misleading straight-line distances with true
+                  road-network driving time and mileage through an asynchronous
+                  OSRM road matrix pipeline.
+                </li>
+                <li>
+                  <strong>Mutual match &amp; 1-click outreach:</strong>
+                  matches candidates by Day/Night shift patterns (D, N, D/N) and
+                  commute thresholds (up to 60–90 mins), with instant
+                  pre-formatted WhatsApp and SMS links.
+                </li>
+                <li>
+                  <strong>Compliance document cross-population:</strong>
+                  an XML-level Word (.docx) extraction and generation engine
+                  that maps candidate data across 19+ care provider proformas
+                  (Care UK, NAS, Salutem, Mencap, Leonard Cheshire and more),
+                  eliminating redundant paperwork.
+                </li>
+                <li>
+                  <strong>Role hierarchy &amp; safety guards:</strong>
+                  strict healthcare role rules (for example, HCAs can cover
+                  Kitchen Assistant shifts but not vice versa, and Senior Care
+                  roles require Medication Competency verification).
+                </li>
+                <li>
+                  <strong>Geospatial demand intelligence:</strong>
+                  an interactive Leaflet map showing candidate density clusters
+                  against underserved care homes (fewer than 3 available workers
+                  within 45 mins) and 8-day forward shift demand.
+                </li>
+              </ul>
+            </div>
+
+            <div class="role">
+              <h3>Architecture &amp; technical challenges</h3>
+              <ul>
+                <li>
+                  <strong>API rate limits at scale (15,000+ pairs):</strong>
+                  chunked requests into batches of 90, added exponential backoff
+                  retries, and built a multi-tier persistent database and
+                  session cache.
+                </li>
+                <li>
+                  <strong>Render storms and UI lag:</strong>
+                  converted rapid background state emissions into a 1.5-second
+                  throttled debounce and deferred heavy 30,000-matrix
+                  calculations until modal interaction, keeping the UI at 60
+                  FPS.
+                </li>
+                <li>
+                  <strong>Document table and date parsing:</strong>
+                  re-engineered the .docx XML parser with date-first regex
+                  patterns, so UK-standard DD-MM-YYYY completion dates take
+                  priority over simple Yes/No values in complex tables.
+                </li>
+                <li>
+                  <strong>2-tier geocoding fallback:</strong>
+                  automatic fallback from exact UK postcodes to town centroids,
+                  with visible accuracy badges (Exact vs Approx).
+                </li>
+              </ul>
+            </div>
+          </section>
           <!-- AI Literacy Course -->
           <section id="ai-literacy">
             <span class="image fit">
@@ -255,6 +429,56 @@
             first.classList.add("visible");
           }, 500);
         });
+      });
+    </script>
+    <script>
+      document.querySelectorAll(".slideshow").forEach(function (ss) {
+        var track = ss.querySelector(".slides");
+        var count = track.children.length;
+        var dotBox = ss.querySelector(".dots");
+        var i = 0;
+
+        for (var d = 0; d < count; d++) {
+          (function (n) {
+            var dot = document.createElement("span");
+            dot.addEventListener("click", function () {
+              go(n);
+            });
+            dotBox.appendChild(dot);
+          })(d);
+        }
+
+        function paint() {
+          [].forEach.call(dotBox.children, function (dot, n) {
+            dot.classList.toggle("on", n === i);
+          });
+        }
+        function go(n) {
+          i = (n + count) % count;
+          track.scrollTo({ left: i * track.clientWidth, behavior: "smooth" });
+          paint();
+        }
+        track.addEventListener("scroll", function () {
+          i = Math.round(track.scrollLeft / track.clientWidth);
+          paint();
+        });
+
+        function press(el, fn) {
+          el.addEventListener("click", fn);
+          el.addEventListener("keydown", function (e) {
+            if (e.key === "Enter" || e.key === " ") {
+              e.preventDefault();
+              fn();
+            }
+          });
+        }
+        press(ss.querySelector(".prev"), function () {
+          go(i - 1);
+        });
+        press(ss.querySelector(".next"), function () {
+          go(i + 1);
+        });
+        paint();
       });
     </script>
   </body>
